@@ -31,6 +31,5 @@ var response = await chatCompletionService.GetChatMessageContentAsync(
     kernel: kernel
 );
 
-// Step 7: Output the Response
 Console.WriteLine("Generated SQL:");
 Console.WriteLine(response);
