@@ -16,13 +16,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Plugins\prompts\data.csv">
+    <None Update="Plugin\data.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Plugins\prompts\instructions.txt">
+    <None Update="Plugin\instructions.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Plugins\prompts\prompts.txt">
+    <None Update="Plugin\prompt.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
