@@ -10,20 +10,22 @@ var kernel = builder.Build();
 
 var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 
-// Step 3: Load Files
-string promptTemplate = await File.ReadAllTextAsync("prompts.txt");
-string instructions = await File.ReadAllTextAsync("instructions.txt");
-string csvData = await File.ReadAllTextAsync("data.csv");
+string promptTemplate = await File.ReadAllTextAsync("Plugins/prompts/prompts.txt");
+string instructions = await File.ReadAllTextAsync("Plugins/prompts/instructions.txt");
+string csvData = await File.ReadAllTextAsync("Plugins/prompts/data.csv");
 
 
 string formattedPrompt = promptTemplate
     .Replace("{{instructions}}", instructions)
     .Replace("{{csvData}}", csvData);
 
-// Step 5: Add the Prompt to Chat History
-ChatHistory history = [];
 
-// Step 6: Get AI-Generated Response
+ChatHistory history = new()
+{
+    new Microsoft.SemanticKernel.ChatMessageContent(new AuthorRole("User"), formattedPrompt)
+};
+
+
 var response = await chatCompletionService.GetChatMessageContentAsync(
     history,
     kernel: kernel
