@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[1.32.0, )"
             },
+            "Microsoft.SemanticKernel.Connectors.Ollama": {
+              "target": "Package",
+              "version": "[1.32.0-alpha, )"
+            },
             "Microsoft.SemanticKernel.Plugins.Core": {
               "target": "Package",
               "version": "[1.32.0-alpha, )"
