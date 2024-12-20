@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SemanticKernel.Plugins")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65773934681f98e94c5cf849cde866ab03ad5de4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e804d7a9e5f90c6fbc96f2b9c436a80c51c4b8c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("SemanticKernel.Plugins")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SemanticKernel.Plugins")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
